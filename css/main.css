@@ -1,89 +1,108 @@
-.img1{
-filter: none;
+.img1 {
+    filter: none;
 }
-.img2{
+
+.img2 {
     filter: blur(5px);
 }
-.img3{
+
+.img3 {
     filter: brightness(200%);
 }
-.img4{
+
+.img4 {
     filter: contrast(200%);
 }
-.img5{
+
+.img5 {
     filter: drop-shadow(8px 8px 10px blue);
 }
-.img6{
+
+.img6 {
     filter: grayscale(100%);
 }
-.img7{
+
+.img7 {
     filter: hue-rotate(90deg);
 }
-.img8{
+
+.img8 {
     filter: invert(100%);
 }
-.img9{
+
+.img9 {
     filter: opacity(30%);
 }
-.img10{
+
+.img10 {
     filter: saturate(8);
 }
-.img11{
+
+.img11 {
     filter: sepia(100%);
 }
-.transition{
-width: 100px;
-height: 100px;
-background-color: blue;
-transition: 2s;
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: 2s;
 }
-.transition:hover{
+
+.transition:hover {
     width: 300px;
 }
-.transition-delay{
-width: 100px;
-height: 100px;
-background-color: green;
-transition: width 3s;
-  transition-delay: 1s;
+
+.transition-delay {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 3s;
+    transition-delay: 1s;
 }
 
 .transition-delay:hover {
-  width: 300px;
-}
-.transition-duration{
-width: 100px;
-height: 100px;
-background-color: yellow;
-transition-property: width;
-  transition-duration: 5s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-}
-.transition-duration:hover{
     width: 300px;
 }
-.transition-property{
-width: 100px;
-height: 100px;
-background-color: red;
-transition-property: width height;
-transition-duration:2s ;
-}
-.transition-property:hover{
-height: 300px;
-width: 300px;
-}
-.transition-timing-function{
+
+.transition-duration {
     width: 100px;
     height: 100px;
-    background-color: orange;;
+    background-color: yellow;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.transition-duration:hover {
+    width: 300px;
+}
+
+.transition-property {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-property: width height;
+    transition-duration: 2s;
+}
+
+.transition-property:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.transition-timing-function {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    ;
     transition: width 2s;
     color: #fff;
 }
 
-.transition-timing-function:hover{
-    width: 300px ;
+.transition-timing-function:hover {
+    width: 300px;
 }
 
 #linear {
@@ -95,7 +114,7 @@ width: 300px;
 }
 
 #ease-in {
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 
 #ease-out {
@@ -107,5 +126,5 @@ width: 300px;
 }
 
 #cubic-bazier {
-    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
 }
